@@ -36,7 +36,7 @@
             <div id="localVolume" class="volume_bar"></div>
         </div>
         <div id="remotes"></div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="public/js/jquery.min.js"></script>
         <script src="socket.io.js"></script>
         <script src="simplewebrtc.bundle.js"></script>
         <script>
@@ -53,7 +53,8 @@
                 autoRequestMedia: true,
                 debug: false,
                 detectSpeakingEvents: true,
-                autoAdjustMic: false
+                autoAdjustMic: false,
+                url:"http://localhost:8888"
             });
 
             // when it's ready, join if we got a room from the URL
